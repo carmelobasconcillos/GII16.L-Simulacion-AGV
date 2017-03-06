@@ -1,1 +1,5 @@
-GII16.L AGVsim. Aplicabilidad de Gazebo en la simulaciÛn de vehÌculos autÛnomos
+# GII16.L AGVsim. Aplicabilidad de Gazebo en la simulaci√≥n de veh√≠culos aut√≥nomos
+
+Autor: Carmelo Basconcillos Reyero
+
+Tutor: Jes√∫s Enrique Sierra Garc√≠a
