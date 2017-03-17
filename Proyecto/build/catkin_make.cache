@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/carmelo00/robot/devel -DCMAKE_INSTALL_PREFIX=/home/carmelo00/robot/install -G Unix Makefiles
