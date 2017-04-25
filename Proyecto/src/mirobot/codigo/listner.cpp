@@ -41,8 +41,8 @@ namespace gazebo{
 	}
 	void Listner::listener(const std_msgs::String::ConstPtr& msg){
 		std::string m=msg->data.c_str();
-		//Comandos::procesar(m, this->robot);
-		gzdbg<<m<<"\r\n";
+		Comandos::procesar(m, this->robot);
+		//gzdbg<<m<<"\r\n";
 
 	}
 

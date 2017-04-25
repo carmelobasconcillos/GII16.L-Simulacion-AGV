@@ -9,9 +9,8 @@ namespace gazebo {
 		std::vector<std::string> partes=split(comando, ' ');
 
 		if(partes.size()==0){
-			//gzerr<<"No se ha indicado un comando válido."<<"\r\n";
+			gzerr<<"No se ha indicado un comando válido."<<"\r\n";
 		}else{
-			//gzdbg<<partes[0]<<" "<<partes[1]<<"\r\n";
 			switch(partes[0][0]){
 				case 'd':
 					if(partes.size()>1){
