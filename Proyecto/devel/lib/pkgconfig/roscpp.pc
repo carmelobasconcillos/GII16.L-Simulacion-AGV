@@ -1,8 +1,0 @@
-prefix=/home/carmelo00/robot/devel
-
-Name: roscpp
-Description: Description of roscpp
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/carmelo00/robot/devel/lib 
-Requires: 
