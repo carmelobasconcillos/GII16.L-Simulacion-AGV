@@ -7,7 +7,7 @@
 
 #include <stdio.h>
 #include <thread>
-#include "miRobot.h"
+#include "mirobot.h"
 
 
 namespace gazebo{

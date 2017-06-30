@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(miRobot)
+project(mirobot)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -128,8 +128,10 @@ include_directories(
 
 ## Declare a C++ library
 add_library(${PROJECT_NAME}
-   codigo/miRobot.cpp
+   codigo/mirobot.cpp
    codigo/listner.cpp
+   codigo/comandos.cpp
+   
  )
 
 ## Add cmake target dependencies of the library

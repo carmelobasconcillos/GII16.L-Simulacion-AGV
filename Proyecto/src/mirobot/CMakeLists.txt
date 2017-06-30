@@ -128,9 +128,9 @@ include_directories(
 
 ## Declare a C++ library
 add_library(${PROJECT_NAME}
-   codigo/miRobot.cpp
+   codigo/mirobot.cpp
    codigo/listner.cpp
-   codigo/Comandos.cpp
+   codigo/comandos.cpp
    
  )
 

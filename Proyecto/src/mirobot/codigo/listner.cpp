@@ -3,7 +3,7 @@
 #include "ros/callback_queue.h"
 #include "ros/subscribe_options.h"
 #include "std_msgs/String.h"
-#include "Comandos.h"
+#include "comandos.h"
 #include <stdio.h>
 #include <gazebo/gazebo.hh>
 namespace gazebo{

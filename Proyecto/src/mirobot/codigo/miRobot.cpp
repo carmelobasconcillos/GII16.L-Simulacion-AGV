@@ -1,4 +1,4 @@
-#include "miRobot.h"
+#include "mirobot.h"
 #include "listner.h"
 #include <gazebo/gazebo.hh>
 #include <gazebo/physics/physics.hh>
@@ -32,15 +32,14 @@ namespace gazebo{
 
 				 double absError=(error>0)?error:-1*error;
 				 double velocidad=0;
-				 ///if(absError>0.001){
+				 if(absError>0.001){
 					 velocidad=_union->pid.Update(error, ticActual);
 
-				 /*}else{
+				 }else{
 					 _union->moviendo=false;
-				 }*/
+				 }
 				 _union->velocidad=velocidad;
 			 }
-
 			 _union->joint->SetVelocity(0,_union->velocidad);
 		 }
 	 }
