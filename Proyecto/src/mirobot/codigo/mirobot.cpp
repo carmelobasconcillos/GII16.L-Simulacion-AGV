@@ -11,7 +11,7 @@ namespace gazebo{
 		 cargarUniones();
 		 listner=new Listner();
 		 this->estado="iniciado";
-		 listner->init(this);
+		 listner->init(this,"/"+_model->GetName());
 
 		 this->conexionUpdate=event::Events::ConnectWorldUpdateBegin(boost::bind(&MiRobot::OnUpdate,this,_1));
 

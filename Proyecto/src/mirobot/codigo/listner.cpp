@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <gazebo/gazebo.hh>
 namespace gazebo{
-	void Listner::init(MiRobot * robot){
+	void Listner::init(MiRobot * robot,const std::string topic){
 		this->robot=robot;
 		//Listner::contadorConexiones=0;
 		if(!ros::isInitialized()){
@@ -19,7 +19,7 @@ namespace gazebo{
 		this->nodo.reset(new ros::NodeHandle("gazebo_client"));
 
 		ros::SubscribeOptions so=ros::SubscribeOptions::create<std_msgs::String>(
-				"/miRobot",
+				topic,
 				1,
 				boost::bind(&Listner::listener, this, _1),
 				ros::VoidPtr(),
@@ -28,7 +28,7 @@ namespace gazebo{
 		this->subscriber=this->nodo->subscribe(so);
 
 		ros::AdvertiseOptions ad=ros::AdvertiseOptions::create<std_msgs::String>(
-						"/miRobot_m",
+						topic+"_m",
 						1,
 						&this->conexion,
 						&this->desconexion,

@@ -142,6 +142,7 @@ add_library(${PROJECT_NAME}
 ## Declare a C++ executable
 # add_executable(miRobot_node src/miRobot_node.cpp)
 
+
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(miRobot_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
